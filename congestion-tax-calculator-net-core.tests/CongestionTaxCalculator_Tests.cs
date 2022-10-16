@@ -15,12 +15,12 @@ namespace congestion_tax_calculator_net_core.tests
         public CongestionTaxCalculator_Tests()
         {
             //assum it's Gothenburg city params
-            TaxCalculatorParameters _gothenburgParams = new TaxCalculatorParameters() {
+            TaxCalculatorParameters _GothenBurg_Params = new TaxCalculatorParameters() {
                 PeriodOfTimeWhenConsequentPasses = 60 };
 
 
             // pass city parameters
-            taxCalculator = new CongestionTaxCalculator(_gothenburgParams);
+            taxCalculator = new CongestionTaxCalculator(_GothenBurg_Params);
         }
 
 
