@@ -4,9 +4,11 @@
 Please consider checking the solution as follows:
 - Start with the swagger URL : https://localhost:7259/swagger/index.html
 - Try it out to make sure that all scenarios are covered.
-- Check the bug fix in GetTax function  (long diffInMillies = date.Millisecond - intervalStart.Millisecond;)
-- Check the unit tests, it covered most of scenarios including exceptions.
-- Check the bounus scenario. I connect to an sqlLite file. It could be anything else. ( AWS DynamoDB, or RDS, or any on primeses DB)
+- In `congestion-tax-calculator-net-core` project, Check the bug fix in GetTax function  (long diffInMillies = date.Millisecond - intervalStart.Millisecond;)
+- Check the unit tests in `congestion-tax-calculator-net-core.tests` , it covered most of scenarios including exceptions.
+- Check the bounus scenario. I connect to an sqlLite file. It could be anything else. ( AWS DynamoDB, or RDS, or any on primeses DB) and check `DBAccess` project.
+- Check the API project `TaxCalculator.API`
+
 
 My additions:
 - added vehicle types as classes to Vehicle folder
