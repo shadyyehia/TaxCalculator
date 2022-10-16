@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>congestion.calculator</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CodeFile1.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBAccess\DBAccess.csproj" />
+  </ItemGroup>
+
+</Project>
