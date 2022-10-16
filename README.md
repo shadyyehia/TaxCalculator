@@ -1,7 +1,7 @@
 # TaxCalculator
 
 
-To check the solution:
+Please consider checking the solution as follows:
 - Start with the swagger URL : https://localhost:7259/swagger/index.html
 - Try it out to make sure that all scenarios are covered.
 - Check the bug fix in GetTax function  (long diffInMillies = date.Millisecond - intervalStart.Millisecond;)
