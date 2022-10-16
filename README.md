@@ -24,4 +24,4 @@ and I read city parameters from it.
 - added DBAccess project to handle the external data store.
 - DB connection string is configurable in app.settings.
 
-Hopefully I didn't forget anything :)
+
