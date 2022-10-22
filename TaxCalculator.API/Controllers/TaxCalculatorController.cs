@@ -62,10 +62,19 @@ namespace TaxCalculator.API.Controllers
                 string connectionStr = _config.GetConnectionString("connectionStr");
                 TaxCalculatorParameters _params = _dbmanager.ReadData(connectionStr,_input.City);
 
+                //var services = this.HttpContext.RequestServices;
+                //var taxCalculator = services.GetService(typeof(ITaxCalculator)) as ITaxCalculator;
 
                 // pass city parameters
-                ITaxCalculator taxCalculator = new CongestionTaxCalculator(_params);
-               
+                var services = new ServiceCollection();
+                services.AddSingleton<ITaxCalculator>(s => new CongestionTaxCalculator(_params));
+                var provider = services.BuildServiceProvider();
+                ITaxCalculator taxCalculator = provider.GetService<ITaxCalculator>();
+
+
+                // pass city parameters
+                //ITaxCalculator taxCalculator = new CongestionTaxCalculator(_params);
+
                 //create vehicle object
                 var vehicleFactory = new VehicleFactory();
                 IVehicle c = vehicleFactory.CreateVehicle(_input.VehicleType);
