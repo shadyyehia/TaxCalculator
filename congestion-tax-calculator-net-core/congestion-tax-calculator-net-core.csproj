@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DBAccess\DBAccess.csproj" />
+    <ProjectReference Include="..\congestion-tax-calculator-db-access\congestion-tax-calculator-db-access.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <DocumentationFile>TaxCalculator.API.xml</DocumentationFile>
+    <DocumentationFile>congestion-tax-calculator-api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

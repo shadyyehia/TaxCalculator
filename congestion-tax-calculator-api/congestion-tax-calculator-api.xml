@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>congestion-tax-calculator-api</name>
+    </assembly>
+    <members>
+        <member name="T:TaxCalculator.API.Controllers.CalculatorInput">
+            <summary>
+            {VehicleType, Passing Dates for this vehicle }
+            </summary>
+        </member>
+        <member name="P:TaxCalculator.API.Controllers.CalculatorInput.VehicleType">
+            <summary>   
+            The vehicle type, based on this type the taxes are calculated.\
+            Available types: { Car, Motorbike, Motorcycle, Tractor, Diplomat, Emergency, Foreign, Military }.
+            </summary>
+        </member>
+        <member name="P:TaxCalculator.API.Controllers.CalculatorInput.City">
+            <summary>   
+            The vehicle type, based on this type the taxes are calculated.\
+            Available types: { Car, Motorbike, Motorcycle, Tractor, Diplomat, Emergency, Foreign, Military }.
+            </summary>
+        </member>
+        <member name="P:TaxCalculator.API.Controllers.CalculatorInput.Dates">
+            <summary>
+            Passing dates for the vehicle.\
+            String must be in format: yyyy-MM-dd HH:mm:ss .\
+            The year must be 2013 or you will get zero. Example: 2013-02-08 15:47:00      
+            </summary>
+        </member>
+        <member name="T:TaxCalculator.API.Controllers.TaxCalculatorController">
+            <summary>
+            Tax Calculator main class
+            </summary>
+        </member>
+        <member name="M:TaxCalculator.API.Controllers.TaxCalculatorController.#ctor(Microsoft.Extensions.Logging.ILogger{TaxCalculator.API.Controllers.TaxCalculatorController},DBAccess.IDB_Manager,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Tax Calculator constructor
+            </summary>
+            <param name="logger"></param>
+            <param name="dbManager"></param>
+        </member>
+        <member name="M:TaxCalculator.API.Controllers.TaxCalculatorController.CalculateTax(TaxCalculator.API.Controllers.CalculatorInput)">
+             <summary>
+             Calculate the total toll fee for one day
+             </summary>
+             <param name="_input">Calculator Input : { the vehicle type, date and time of all passes on one day } </param>
+             <returns>ActionResult of string</returns>
+             <remarks>
+              Sample request post data : { 
+            "vehicleType": "Car",
+             "city" : "Gothenburg",
+            "dates": [
+              "2013-02-08 15:47:00","2013-02-08 16:50:00"
+            ]}
+             </remarks>
+        </member>
+    </members>
+</doc>

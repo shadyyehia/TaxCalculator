@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>TaxCalculator.API</name>
+        <name>congestion-tax-calculator-api</name>
     </assembly>
     <members>
         <member name="T:TaxCalculator.API.Controllers.CalculatorInput">

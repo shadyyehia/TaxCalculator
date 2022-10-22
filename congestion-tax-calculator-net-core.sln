@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "congestion-tax-calculator-n
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "congestion-tax-calculator-net-core.tests", "congestion-tax-calculator-net-core.tests\congestion-tax-calculator-net-core.tests.csproj", "{46E718A3-F308-4A07-BA84-3FCFD45DC08A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator.API", "TaxCalculator.API\TaxCalculator.API.csproj", "{AF47FD50-F884-42ED-84BF-CD15B100E50B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "congestion-tax-calculator-db-access", "congestion-tax-calculator-db-access\congestion-tax-calculator-db-access.csproj", "{A8B1FAFF-37B3-4C97-82D7-ABBEFE651C1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBAccess", "DBAccess\DBAccess.csproj", "{5E04787A-AD84-4E79-8E16-22EE33417437}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "congestion-tax-calculator-api", "congestion-tax-calculator-api\congestion-tax-calculator-api.csproj", "{10D72A62-63FF-42B0-9003-C44FDC5E5890}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{46E718A3-F308-4A07-BA84-3FCFD45DC08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46E718A3-F308-4A07-BA84-3FCFD45DC08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46E718A3-F308-4A07-BA84-3FCFD45DC08A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF47FD50-F884-42ED-84BF-CD15B100E50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF47FD50-F884-42ED-84BF-CD15B100E50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF47FD50-F884-42ED-84BF-CD15B100E50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF47FD50-F884-42ED-84BF-CD15B100E50B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E04787A-AD84-4E79-8E16-22EE33417437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E04787A-AD84-4E79-8E16-22EE33417437}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E04787A-AD84-4E79-8E16-22EE33417437}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E04787A-AD84-4E79-8E16-22EE33417437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B1FAFF-37B3-4C97-82D7-ABBEFE651C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B1FAFF-37B3-4C97-82D7-ABBEFE651C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B1FAFF-37B3-4C97-82D7-ABBEFE651C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B1FAFF-37B3-4C97-82D7-ABBEFE651C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D72A62-63FF-42B0-9003-C44FDC5E5890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D72A62-63FF-42B0-9003-C44FDC5E5890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D72A62-63FF-42B0-9003-C44FDC5E5890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D72A62-63FF-42B0-9003-C44FDC5E5890}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
